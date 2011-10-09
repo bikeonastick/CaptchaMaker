@@ -1,0 +1,6 @@
+Plans:
+
+* Add ability to randomly manipulate the captcha text to make it harder to read by machine.
+* Expand the delivered courier library to include all printable ASCII chars
+* Add a drawn character mode for a font-library-free mode of operation.
+

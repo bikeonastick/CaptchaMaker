@@ -1,0 +1,22 @@
+
+Copyright 2011 robert tomb (bikeonastick) 
+
+
+License:
+
+This project is licensed under the Licensed under the Apache License, Version 2.0. See LICENSE in this directory or http://www.apache.org/licenses/LICENSE-2.0 for a copy of the license.
+
+Info:
+This uses font characters you define in png files in a font library. This gem comes with a limited set of characters 0-9, +, /, *, and - in a courier font. This can be overridden if you create a font library using the convention described below.
+
+CaptchaFontLib Conventions:
+When instantiating a font lib you specify a font name and a path to the lib. The path to the lib represents a directory above the directory that contains your font, e.g., if your font is FooSans, your dir structure would look like this:
+
+~/myFonts/
+    FooSans/
+		   ...
+		   cm_49.png
+		   cm_50.png
+		   cm_51.png
+		   ...
+Your library would also contain png files for each character to be used and would be named with cm_<ascii decimail rep>.png, e.g. your file for the number 3 would be cm_51.png. If you include a character in a string that is not represented in the font library, we raise a CaptchaFontException.
