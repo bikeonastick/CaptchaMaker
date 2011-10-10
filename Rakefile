@@ -31,7 +31,6 @@ end
 desc "prepare directories"
 task :prep do
 	FileUtils.mkdir "pkg"
-	FileUtils.mkdir "rdoc"
 end
 
 desc "generate documentation"
